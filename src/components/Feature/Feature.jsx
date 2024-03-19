@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 import { FaCheckCircle } from "react-icons/fa";
 
 const Feature = ({feature}) => {
@@ -11,5 +11,10 @@ const Feature = ({feature}) => {
         </div>
     );
 };
+
+Feature.propTypes={
+    feature:PropTypes.object.isRequired
+}
+
 
 export default Feature;
